@@ -10,7 +10,7 @@ namespace PickACardUI
     {
         static Random random = new Random();
 
-        public static string[] PickSomeCards(int numberOfCards)
+        public string[] PickSomeCards(int numberOfCards)
         {
             string[] pickedCards = new string[numberOfCards];
             for(int i = 0; i < numberOfCards; i++)
