@@ -7,9 +7,18 @@ using System.Threading.Tasks;
 namespace PickACardUI
 {
     class CardPicker
-    {
+    {   
+        /// <summary>
+        /// 宣告random為Random的新實例
+        /// </summary>
         static Random random = new Random();
 
+
+        /// <summary>
+        /// 抽出一些撲克牌並回傳它們
+        /// </summary>
+        /// <param name="numberOfCards">要抽出幾張牌</param>
+        /// <returns>存有撲克牌名稱的字串陣列</returns>
         public string[] PickSomeCards(int numberOfCards)
         {
             string[] pickedCards = new string[numberOfCards];
